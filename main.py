@@ -44,22 +44,3 @@ for article in articles:
 
 
 
-# response = requests.get('https://www.sport-express.ru')
-# text = response.text
-#
-# soup = bs4.BeautifulSoup(text, features="html.parser")
-# articles = soup.find_all(class_="se-material__content")
-#
-# KEYWORDS = ['Футбол', 'Хоккей']
-#
-# for article in articles:
-#     # preview = article.find_all(class_="se-material-preview-info__holder")
-#     # preview = [p.find('a').text for p in preview]
-#     # if preview in KEYWORDS:
-#     #     date_tag_time = article.find(class_="se-material-preview-info__datetime ")
-#     #     date = date_tag_time.text
-#         article_tag_a = article.find('a')
-#         article_name = article_tag_a.text
-#         url = article_tag_a.attrs['href']
-#         print(f"<Date>:, <Header>: {article_name}, <Link>: {url}")
-#         print('------------------------------------------------------------')
